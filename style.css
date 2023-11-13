@@ -1,0 +1,94 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg,rgb(132, 0, 255),rgb(0, 0, 129)) ;
+    margin: 0;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.TDL{
+    background-color: white;
+    width: 655px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.input-added{
+    height: 35px;
+    width: 550px;
+    border: 0;
+    background-color: aliceblue;
+    outline: 0;
+    border-radius: 20px;
+}
+
+.button-list{
+    margin: 40px 0px;
+}
+
+button{
+    margin-right: 1px;
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+button:hover:not(.selected){
+    background-color: rgba(30, 143, 255, 0.55);
+    color: white;
+}
+
+.selected{
+    background-color: dodgerblue;
+    color: white;
+    border: 0;
+}
+
+.liste-tache ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.liste-tache li{
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.liste-tache label{
+    overflow-x: auto;
+    margin-left: 10px;
+    width: 600px;
+}
+
+.tache-finis{
+    color: #444;
+    text-decoration: 3px line-through black;
+}
+
+.trash{
+    color: red;
+    float: right;
+    cursor: pointer;
+}
+
